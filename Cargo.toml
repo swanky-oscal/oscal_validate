@@ -1,0 +1,19 @@
+[package]
+name = "oscal_validate"
+version = "0.0.1"
+edition = "2021"
+authors = ["David Skyberg <davidskyberg+oscal@gmail.com"]
+description = "OSCAL lib in Rust"
+keywords = ["rust", "oscal"]
+repository = "https://github.com/swanky-oscal/oscal_validate"
+license = "MIT OR Apache 2.0"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.80"
+oscal_lib = { path = "../oscal_lib" }
+rayon = "1.9.0"
+serde = { version = "1.0.197", features = ["derive"] }
+serde_json = "1.0.114"
+thiserror = "1.0.57"
